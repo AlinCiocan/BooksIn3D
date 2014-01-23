@@ -6,36 +6,112 @@
  * */
 
 var container, stats;
-var camera, scene, renderer, controls;
+var camera, scene, renderer, controls, time = Date.now();
 
 
 function init() {
     log("worked init");
     container = document.createElement('div');
     document.body.appendChild(container);
-
+    //SCENE
     scene = new THREE.Scene();
 
+
+    // CAMERA
     camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 10000);
 
-    camera.position.set(-16, 42, 42);
+    camera.position.set(0, 5, 100);
+    camera.rotation.x = 0.5;
+
+    controls = new THREE.PointerLockControls(camera);
+    scene.add(controls.getObject());
+
+    camera.addEventListener('change', render);
 
 
-    controls = new THREE.TrackballControls(camera);
+    var blocker = document.getElementById( 'blocker' );
+    var instructions = document.getElementById( 'instructions' );
 
-    controls.rotateSpeed = 1;
-    controls.zoomSpeed = 1.2;
-    controls.panSpeed = 1;
+    // http://www.html5rocks.com/en/tutorials/pointerlock/intro/
 
-    controls.noZoom = false;
-    controls.noPan = false;
+    var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
 
-    controls.staticMoving = true;
-    controls.dynamicDampingFactor = 0.3;
+    if ( havePointerLock ) {
 
-    controls.target.set(20, 0, 0);
+        var element = document.body;
 
-    controls.addEventListener('change', render);
+        var pointerlockchange = function ( event ) {
+
+            if ( document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element ) {
+
+                controls.enabled = true;
+
+                log("pointer LOCKED", event);
+
+            } else {
+
+                controls.enabled = false;
+
+                log("pointer lock RELEASED", event);
+            }
+
+        }
+
+        var pointerlockerror = function ( event ) {
+
+           log("error pointerlockerror:", event);
+
+        }
+
+        // Hook pointer lock state change events
+        document.addEventListener( 'pointerlockchange', pointerlockchange, false );
+        document.addEventListener( 'mozpointerlockchange', pointerlockchange, false );
+        document.addEventListener( 'webkitpointerlockchange', pointerlockchange, false );
+
+        document.addEventListener( 'pointerlockerror', pointerlockerror, false );
+        document.addEventListener( 'mozpointerlockerror', pointerlockerror, false );
+        document.addEventListener( 'webkitpointerlockerror', pointerlockerror, false );
+
+        document.addEventListener("click", function hidePointer () {
+
+
+            // Ask the browser to lock the pointer
+            element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+
+            if ( /Firefox/i.test( navigator.userAgent ) ) {
+
+                var fullscreenchange = function ( event ) {
+
+                    if ( document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element ) {
+
+                        document.removeEventListener( 'fullscreenchange', fullscreenchange );
+                        document.removeEventListener( 'mozfullscreenchange', fullscreenchange );
+
+                        element.requestPointerLock();
+                    }
+
+                }
+
+                document.addEventListener( 'fullscreenchange', fullscreenchange, false );
+                document.addEventListener( 'mozfullscreenchange', fullscreenchange, false );
+
+                element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
+
+                element.requestFullscreen();
+
+            } else {
+
+                element.requestPointerLock();
+
+            }
+
+        }, false );
+
+    } else {
+
+        alert( 'Your browser doesn\'t seem to support Pointer Lock API' );
+
+    }
 
     // RENDERER
     renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -64,23 +140,34 @@ function fillScene() {
     scene.add(cube);
 
     light = getNewDirectLight();
-    light.position.set(100,100,0);
+    light.position.set(100, 100, 100);
     scene.add(light);
+
+
+    floorTexture = THREE.ImageUtils.loadTexture("http://localhost:3000/images/ground.jpg");
+    floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
+    floorTexture.repeat.set(100, 100);
+    floor = new THREE.Mesh(new THREE.PlaneGeometry(500, 500), new THREE.MeshBasicMaterial({map: floorTexture}));
+    floor.rotateX(degreeToRad(-90));
+    scene.add(floor);
+
 }
 
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    controls.handleResize();
+    //controls.handleResize();
     renderer.setSize(window.innerWidth, window.innerHeight);
 
 }
 
 function animate() {
     requestAnimationFrame(animate);
-    render();
     stats.update();
-    controls.update();
+    controls.isOnObject(false);
+    controls.update(Date.now() - time);
+    render();
+    time = Date.now();
 }
 
 function render() {
@@ -97,5 +184,12 @@ function main() {
     animate();
 }
 
+// for debug purposes
+function camClose() {
+    camera.position.set(-33, 35, 40);
+}
 
+function camFar() {
+    camera.position.set(-560, 550, 680);
+}
 
