@@ -139,8 +139,13 @@ function fillScene() {
     // scene.add(cube);
 
     light = getNewDirectLight();
+    light.position.set(106, 100, 290);
+    scene.add(light);
+
+    light = getNewDirectLight();
     light.position.set(106, 100, -500);
     scene.add(light);
+
 
 
     var floorTexture = THREE.ImageUtils.loadTexture("http://localhost:3000/images/ground.jpg");
@@ -150,10 +155,9 @@ function fillScene() {
     floor.rotateX(degreeToRad(-90));
     scene.add(floor);
 
-    book = BOOKS.addBook(250);
 
-
-    block = BOOKS.createShelfBlock();
+    books = BOOKS.generateBooks(50);
+    library = BOOKS.addBooksInLibrary(books);
 }
 
 function loadOBJFile(objFile, callback) {
