@@ -41,16 +41,9 @@ function init() {
         var pointerlockchange = function (event) {
 
             if (document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element) {
-
                 controls.enabled = true;
-
-                log("pointer LOCKED", event);
-
             } else {
-
                 controls.enabled = false;
-
-                log("pointer lock RELEASED", event);
             }
 
         }
@@ -139,13 +132,12 @@ function fillScene() {
     // scene.add(cube);
 
     light = getNewDirectLight();
-    light.position.set(106, 100, 290);
+    light.position.set(106, 1000, 290);
     scene.add(light);
 
     light = getNewDirectLight();
-    light.position.set(106, 100, -500);
+    light.position.set(106, 800, -500);
     scene.add(light);
-
 
 
     var floorTexture = THREE.ImageUtils.loadTexture("http://localhost:3000/images/ground.jpg");
@@ -155,8 +147,11 @@ function fillScene() {
     floor.rotateX(degreeToRad(-90));
     scene.add(floor);
 
+    myCube = new THREE.Mesh( new THREE.CubeGeometry(20,20,20) , new THREE.MeshBasicMaterial({color:"red"}) );
 
-    books = BOOKS.generateBooks(50);
+    scene.add(myCube);
+
+    books = BOOKS.generateBooks(200);
     library = BOOKS.addBooksInLibrary(books);
 }
 
