@@ -6,7 +6,7 @@ var BOOKS = (function () {
         bookDepth = 50,
         pagesDepth = bookDepth - coverWidth,
     /* shelves constants */
-        numberOfShelves = 3,
+        numberOfShelves = 2,
         shelvesDepth = 70,
         shelvesWidth = 450,
         shelfHeight = 100,
@@ -17,7 +17,7 @@ var BOOKS = (function () {
 
 
     // ATTRIBUTES
-    window.shelvesCoord = [];
+    window.listOfShleves = [];
 
     return {
         generateBooks: function (size) {
@@ -69,7 +69,6 @@ var BOOKS = (function () {
 
         // TODO:  make dynamic shelves which takes an array of books and put them in the shelves
         addBooksInLibrary: function (books) {
-            shelvesCoord = []; // reset shelves
 
             function calculateNumberOfClosets(books) {
                 var booksLength = books.length, totalWidthOfBooks = 0, numberOfClosetsNeeded;
@@ -89,8 +88,34 @@ var BOOKS = (function () {
             var numberOfClosets = calculateNumberOfClosets(books);
             var library = this.addShelvesClosets(numberOfClosets);
 
+
+            scene.updateMatrixWorld();
+
+
+            var i, side = FLIPPED, shelf;
+            var vector = new THREE.Vector3();
+            var shelvesCoord = [];
+            for (i = 0; i < listOfShleves.length; i++) {
+                shelf = listOfShleves[i];
+                vector.setFromMatrixPosition(shelf.matrixWorld);
+
+                // calculate which shelf is flipped
+                side = i % (numberOfShelves * numberOfBlocksInCloset) == 0 ?
+                    (side == NORMAL) ? FLIPPED : NORMAL
+                    : side;
+
+                shelvesCoord.push({
+                    x: vector.x - shelvesWidth / 2,
+                    y: vector.y,
+                    z: vector.z,
+                    side: side
+                });
+            }
+
+            console.log("shelvesCoord", shelvesCoord);
+
             var booksLength = books.length, book, shelfCount = 0, shelfCapacity = shelvesWidth, currentShelf = shelvesCoord[shelfCount], shelfWidthOffset;
-            for (var i = 0; i < booksLength; i++) {
+            for (i = 0; i < booksLength; i++) {
                 book = books[i];
                 library.add(book);
 
@@ -104,14 +129,13 @@ var BOOKS = (function () {
                 }
                 shelfWidthOffset = shelvesWidth - shelfCapacity;
 
-                if(currentShelf.side == FLIPPED) {
-                     book.rotation.y += degreeToRad(180);
+                if (currentShelf.side == FLIPPED) {
+                    book.rotation.y += degreeToRad(180);
                 }
 
-                book.position.x = currentShelf.x + shelfWidthOffset + book.width - coverWidth * 5;
+                book.position.x = currentShelf.x + shelfWidthOffset;
                 book.position.y = currentShelf.y + bookHeight / 2;
                 book.position.z = currentShelf.z;
-
 
 
             }
@@ -133,23 +157,12 @@ var BOOKS = (function () {
             var closets = [], i, closet, library = new THREE.Object3D();
             window.closets = closets;
 
-            function flipSideForLastShelves() {
-
-                var start = shelvesCoord.length - 1;
-                var end = shelvesCoord.length - (numberOfShelves * numberOfBlocksInCloset);
-                for (var i = start; i >= end; i--) {
-                    shelvesCoord[i].side = FLIPPED;
-                    shelvesCoord[i].z = (shelvesDepth + shelfThickness);
-                }
-            }
-
             for (i = 0; i < numberOfClosets; i++) {
                 closet = new THREE.Object3D();
 
                 var unitBlock1 = this.createShelfUnitBlocks();
                 var unitBlock2 = this.createShelfUnitBlocks();
 
-                flipSideForLastShelves();
 
                 closet.add(unitBlock1);
                 closet.add(unitBlock2);
@@ -171,8 +184,10 @@ var BOOKS = (function () {
 
                 closet.position.x = Math.floor(i / roomRows) * (widthDistanceBetweenClosets + closet.width / 2) + startPosition.x;
                 closet.position.z = (i % roomRows) * (depthDistanceBetweenClosets + closet.depth) + startPosition.z;
+
             }
 
+            window.closets = closets;
 
             scene.add(library);
             return library;
@@ -181,30 +196,17 @@ var BOOKS = (function () {
 
         createShelfUnitBlocks: function () {
 
-            function addToShelvesCoord() {
-                for (j = numberOfShelves - 1; j >= 0; j--) {
-                    shelvesCoord.push({
-                        x: block.position.x + shelfThickness ,
-                        y: shelfHeight * j + shelfThickness * (j + 1),
-                        z: block.position.z, // TODO: if books are too inside add here bookDepth/2
-                        side: NORMAL
-                    });
-                }
-            }
-
             var closet = new THREE.Object3D() , block, j;
 
             // TODO: !! refatcor the for which appears twice
             block = this.createShelfBlock(true);
             closet.add(block);
 
-            addToShelvesCoord();
             for (var i = 0; i < numberOfBlocksInCloset - 1; i++) {
                 block = this.createShelfBlock();
                 block.position.x -= (i + 1) * block.width;
                 closet.add(block);
 
-                addToShelvesCoord();
             }
 
             scene.add(closet);
@@ -273,8 +275,14 @@ var BOOKS = (function () {
             for (var i = 0; i < numberOfShelves + 1; i++) {
                 shelf = shelfMesh.clone();
                 shelf.position.y += i * shelfHeight;
+
+
+                listOfShleves.push(shelf);
+
                 block.add(shelf);
             }
+            // remove the last one, because is not a shelf is just the top plank
+            listOfShleves.pop();
 
             scene.add(block);
 
@@ -289,21 +297,36 @@ var BOOKS = (function () {
 
 
 // just for debug purposes
-/*
 
- function showClosets() {
- console.table(showNice(closets), ["index", "x", "z", "y"]);
- }
 
- function showNice(closets) {
- var newClosets = [];
- for (var i = 0; i < closets.length; i++) {
- newClosets.push({
- index: i,
- x: closets[i].position.x,
- y: closets[i].position.y,
- z: closets[i].position.z
- });
- }
- return newClosets;
- }*/
+function showClosets() {
+    console.table(showNicePosition(closets), ["index", "x", "z", "y"]);
+}
+
+function showNicePosition(closets) {
+    var newClosets = [];
+    for (var i = 0; i < closets.length; i++) {
+        newClosets.push({
+            x: closets[i].position.x,
+            y: closets[i].position.y,
+            z: closets[i].position.z
+        });
+    }
+    return newClosets;
+}
+
+
+function showAllShelves() {
+    console.table(showNicePosition(listOfShleves), ["index", "x", "z", "y"]);
+
+    var vector = new THREE.Vector3();
+    var shelf;
+    for (var i = 0; i < listOfShleves.length; i++) {
+        shelf = listOfShleves[i];
+        vector.setFromMatrixPosition(shelf.matrixWorld);
+        console.log(i, vector);
+
+    }
+
+
+}

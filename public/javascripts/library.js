@@ -151,7 +151,7 @@ function fillScene() {
 
     scene.add(myCube);
 
-    books = BOOKS.generateBooks(200);
+    books = BOOKS.generateBooks(800);
     library = BOOKS.addBooksInLibrary(books);
 }
 
