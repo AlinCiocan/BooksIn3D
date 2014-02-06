@@ -151,8 +151,8 @@ function fillScene() {
 
     scene.add(myCube);
 
-    books = BOOKS.generateBooks(50);
-    library = BOOKS.addBooksInLibrary(books);
+    books = BOOKS.generateBooks(200);
+    library = SHELVES.addBooksInLibrary(books);
 }
 
 function loadOBJFile(objFile, callback) {
