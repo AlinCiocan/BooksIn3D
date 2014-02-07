@@ -140,7 +140,7 @@ function fillScene() {
     scene.add(light);
 
 
-    var floorTexture = THREE.ImageUtils.loadTexture("http://localhost:3000/images/ground.jpg");
+    var floorTexture = TextureLoader.loadlocalImage("ground.jpg");
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set(100, 100);
     floor = new THREE.Mesh(new THREE.PlaneGeometry(1000, 1000), new THREE.MeshBasicMaterial({map: floorTexture}));
