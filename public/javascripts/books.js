@@ -5,9 +5,10 @@ var BOOKS = (function () {
         pagesHeight = bookHeight - 5,
         bookDepth = 50,
         pagesDepth = bookDepth - coverWidth;
-    
+
     return {
         bookHeight: bookHeight,
+        bookDepth: bookDepth,
 
         generateBooks: function (size) {
             var books = [];
@@ -20,7 +21,7 @@ var BOOKS = (function () {
         },
 
 
-        addBook: function (numberOfPages) {
+        addBook: function (numberOfPages, coverImage, title, id) {
             numberOfPages = numberOfPages || 100;
             var pagesWidth = Math.ceil((5 * numberOfPages) / 100), // just a way to differentiate between books with more pages
                 spineCoverWidth = pagesWidth + 2 * coverWidth;
@@ -39,7 +40,22 @@ var BOOKS = (function () {
             book.add(spineBook);
             var cover = new THREE.Mesh(new THREE.CubeGeometry(coverWidth, bookHeight, pagesDepth + coverWidth), coverMaterial);
             cover.position.z += coverWidth / 2;
-            var cover2 = cover.clone();
+
+
+            var materialsArray = [];
+            var coverImageTexture = THREE.ImageUtils.loadTexture("http://localhost:3000/images/cover.jpg")
+            coverImageTexture.wrapS = coverImageTexture.wrapT = THREE.RepeatWrapping;
+            coverImageTexture.repeat.set(1, 1);
+            var coverImageMaterial = new THREE.MeshPhongMaterial({map: coverImageTexture, side: THREE.DoubleSide });
+            materialsArray.push(coverMaterial);
+            materialsArray.push(coverImageMaterial);
+            materialsArray.push(coverMaterial);
+            materialsArray.push(coverMaterial);
+            materialsArray.push(coverMaterial);
+            materialsArray.push(coverMaterial);
+            var cover2 = new THREE.Mesh(new THREE.CubeGeometry(coverWidth, bookHeight, pagesDepth + coverWidth), new THREE.MeshFaceMaterial(materialsArray));
+            cover2.position.z += coverWidth / 2;
+
             // first cover
             cover.position.x += pagesWidth / 2 + coverWidth / 2;
             book.add(cover);

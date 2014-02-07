@@ -1,14 +1,24 @@
 var SHELVES = (function () {
     // CONSTANTS
     var bookHeight = BOOKS.bookHeight,
+    /*closets constants*/
+        depthDistanceBetweenClosets = 500,
+        widthDistanceBetweenClosets = 300,
+        roomSize = 1500,
+        startPosition = {
+            x: 0,
+            z: 0
+        },// the width of the room with is the depth of shelves blocks
     /* shelves constants */
         numberOfShelves = 2,
         shelvesDepth = 70,
-        shelvesWidth = 450,
+        shelvesWidth = 200,
         shelfHeight = 100,
         shelfThickness = 3,
-        numberOfBlocksInCloset = 1, //!! must be bigger than 0(zero)
-        distanceBetweenBooksInShelf = 1,
+        numberOfBlocksInCloset = 3, //!! must be bigger than 0(zero)
+        distanceBetweenBooksInShelf = 10,
+        offsetForBooksAngle = 20, // a heuristic offset for books (due to 'y' rotation)
+        bookRotationAngle = 25, // in degrees
     // SIDE CONSTANTS
         FLIPPED = "flipped", NORMAL = "normal";
 
@@ -18,45 +28,43 @@ var SHELVES = (function () {
 
     // PRIVATE FUNCTIONS
     function calculateNumberOfClosets(books) {
-        var booksLength = books.length, bookWidth, shelfCapacity = shelvesWidth,
+        //TODO: redo this function, because this code is not calculating well anymore
+        var shelfCapacity = shelvesWidth - offsetForBooksAngle;
+        var booksLength = books.length, bookWidth, currShelfCapacity = shelfCapacity,
             numberOfShelvesNeeded = 1, numberOfClosetsNeeded;
         for (var i = 0; i < booksLength; i++) {
             bookWidth = books[i].width + distanceBetweenBooksInShelf;
             // if is not enough space
-            if (shelfCapacity - bookWidth < 0) { // it needs another shelf
+            if (currShelfCapacity - bookWidth < 0) { // it needs another shelf
                 numberOfShelvesNeeded++;
-                shelfCapacity = shelvesWidth;
+                currShelfCapacity = shelfCapacity;
             }
-            shelfCapacity -= bookWidth;
+            currShelfCapacity -= bookWidth;
         }
         numberOfClosetsNeeded = Math.ceil(numberOfShelvesNeeded / (numberOfShelves * numberOfBlocksInCloset * 2));
-        return numberOfClosetsNeeded;
+        return numberOfClosetsNeeded + 1;
     }
 
 
     function addShelvesClosets(numberOfClosets) {
-        var depthDistanceBetweenClosets = 300,
-            widthDistanceBetweenClosets = 300,
-            roomSize = 1500,
-            startPosition = {
-                x: 0,
-                z: 0
-            };// the width of the room with is the depth of shelves blocks
-
         var closets = [], i, closet, library = new THREE.Object3D();
         window.closets = closets;
 
         for (i = 0; i < numberOfClosets; i++) {
             closet = new THREE.Object3D();
 
-            var unitBlock1 = createShelfUnitBlocks();
-            var unitBlock2 = createShelfUnitBlocks();
+            //TODO remove global scope
+            window.unitBlock1 = createShelfUnitBlocks();
+            window.unitBlock2 = createShelfUnitBlocks();
 
 
             closet.add(unitBlock1);
             closet.add(unitBlock2);
 
+
             unitBlock2.rotation.y += degreeToRad(180); // reverse
+
+            unitBlock2.position.x -= unitBlock1.width - shelvesWidth - shelfThickness;
             unitBlock2.position.z += unitBlock1.depth;
 
 
@@ -115,7 +123,7 @@ var SHELVES = (function () {
 
         // if the block doesn't have the left plank, then the width of the insidePlank must
         // be minus the thickness of the left plank
-        var insidePlankWidth = shelvesWidth + shelfThickness * (addLeftPlank ? 2 : 1) - 3;
+        var insidePlankWidth = shelvesWidth + shelfThickness * (addLeftPlank ? 2 : 1);
 
         var insidePlankMaterial = new THREE.MeshLambertMaterial({color: "pink"});
 
@@ -201,7 +209,7 @@ var SHELVES = (function () {
                 : side;
 
             shelvesCoord.push({
-                x: vector.x + shelvesWidth / 2,
+                x: vector.x + shelvesWidth / 2 - offsetForBooksAngle,
                 y: vector.y,
                 z: vector.z,
                 side: side
@@ -214,24 +222,30 @@ var SHELVES = (function () {
 
             book = books[i];
             library.add(book);
-
+            log("book depth", BOOKS.bookDepth);
+            var bookWidth = book.width / 2 + BOOKS.bookDepth / 2 + distanceBetweenBooksInShelf;
             // if is not enough space on the shelf
-            if (shelfCapacity - book.width < 0) {
+            if (shelfCapacity - bookWidth < 0) {
                 // go to the next shelf and start adding
                 shelfCount++;
                 shelfCapacity = shelvesWidth;
                 currentShelf = shelvesCoord[shelfCount];
             }
-            shelfCapacity -= (book.width + distanceBetweenBooksInShelf);
-            shelfWidthOffset = shelvesWidth - shelfCapacity - book.width / 2;
+            shelfCapacity -= bookWidth;
+            shelfWidthOffset = shelvesWidth - shelfCapacity - bookWidth / 2;
 
-            if (currentShelf.side == FLIPPED) {
-                book.rotation.y += degreeToRad(180);
-            }
 
-            book.position.x = currentShelf.x - shelfWidthOffset;
+            book.position.x = currentShelf.x - shelfWidthOffset + distanceBetweenBooksInShelf;
             book.position.y = currentShelf.y + bookHeight / 2;
             book.position.z = currentShelf.z;
+
+            if (currentShelf.side == FLIPPED) {
+                book.rotation.y += degreeToRad(bookRotationAngle);
+            } else {
+                book.rotation.y -= degreeToRad(bookRotationAngle);
+            }
+
+
         }
         return library;
     }

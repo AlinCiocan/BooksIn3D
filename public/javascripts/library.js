@@ -132,11 +132,11 @@ function fillScene() {
     // scene.add(cube);
 
     light = getNewDirectLight();
-    light.position.set(106, 1000, 290);
+    light.position.set(-2074, 500, 400);
     scene.add(light);
 
     light = getNewDirectLight();
-    light.position.set(106, 800, -500);
+    light.position.set(-174, 800, -500);
     scene.add(light);
 
 
@@ -147,12 +147,17 @@ function fillScene() {
     floor.rotateX(degreeToRad(-90));
     scene.add(floor);
 
-    myCube = new THREE.Mesh( new THREE.CubeGeometry(20,20,20) , new THREE.MeshBasicMaterial({color:"red"}) );
+    /*    myCube = new THREE.Mesh( new THREE.CubeGeometry(20,20,20) , new THREE.MeshBasicMaterial({color:"red"}) );
+     scene.add(myCube);*/
 
-    scene.add(myCube);
-
-    books = BOOKS.generateBooks(200);
+    books = BOOKS.generateBooks(80);
     library = SHELVES.addBooksInLibrary(books);
+
+    // just for debug purposes
+    /*    for (var contor = 0; contor < books.length; contor++) {
+     scene.add(books[contor]);
+     }
+     scene.remove(library);*/
 }
 
 function loadOBJFile(objFile, callback) {
