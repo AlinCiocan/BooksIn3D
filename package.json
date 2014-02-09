@@ -8,6 +8,14 @@
   "dependencies": {
     "express": "3.4.8",
     "ejs": "*",
-    "goodreads": "0.0.2"
+    "oauth": "~0.9.11",
+    "js-oauth": "~1.3.4",
+    "xml2js": "~0.4.1",
+    "jquery": "~2.1.0",
+    "jsdom": "~0.10.1",
+    "node-mysql": "~0.3.6",
+    "mysql": "~2.0.1",
+    "passport-goodreads": "~0.1.2",
+    "passport": "~0.2.0"
   }
 }

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1>Books in 3D</h1>
+
+<% if(!logged) { %>
+<a href="/login">Login with Goodreads</a>
+<% } else { %>
+<h2>Hello, <%= user.displayName %></h2> <br>
+<a href="/library">View library</a> <br>
+<a href="/goodreadsRetrieveBooks">Update books</a> <br>
+Share link : here library link <br>
+<% } %>
+</body>
 </html>

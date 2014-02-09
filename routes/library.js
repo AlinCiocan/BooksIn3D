@@ -3,7 +3,5 @@
  */
 
 exports.index = function(req, res){
-    var goodreads = require("goodreads");
-
     res.render('library', { title: 'Express' });
 };
