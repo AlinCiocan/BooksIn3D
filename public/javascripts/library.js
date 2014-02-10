@@ -150,7 +150,7 @@ function fillScene() {
     /*    myCube = new THREE.Mesh( new THREE.CubeGeometry(20,20,20) , new THREE.MeshBasicMaterial({color:"red"}) );
      scene.add(myCube);*/
 
-    books = BOOKS.generateBooks(80);
+    books = BOOKS.createBooks(dbBooks);
     library = SHELVES.addBooksInLibrary(books);
 
     // just for debug purposes

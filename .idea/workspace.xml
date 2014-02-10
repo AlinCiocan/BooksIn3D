@@ -64,37 +64,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="105" selection-start="3312" selection-end="3312" vertical-scroll-proportion="-1.2214022" vertical-offset="2549" max-vertical-offset="4556">
+            <state line="89" column="3" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="5321">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authenticate.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/middleware/authenticate.js">
+      <file leaf-file-name="library.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/library.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="6" selection-start="11945" selection-end="11945" vertical-scroll-proportion="0.0" vertical-offset="5519" max-vertical-offset="5882">
+            <state line="44" column="18" selection-start="1642" selection-end="1649" vertical-scroll-proportion="-13.230769" vertical-offset="404" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <file leaf-file-name="library.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="9" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="5559">
+            <state line="150" column="25" selection-start="5034" selection-end="5034" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3723">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oauth.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/oauth/lib/oauth.js">
+      <file leaf-file-name="books.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/books.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="9775">
+            <state line="33" column="49" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.375" vertical-offset="408" max-vertical-offset="1683">
               <folding />
             </state>
           </provider>
@@ -116,10 +116,7 @@
         <option value="$PROJECT_DIR$/public/javascripts/libs/books.js" />
         <option value="$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/PointerLockControls.js" />
         <option value="$PROJECT_DIR$/public/javascripts/shelves.js" />
-        <option value="$PROJECT_DIR$/views/library.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/textureLoader.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/books.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/library.js" />
         <option value="$PROJECT_DIR$/node_modules/goodreads/lib/goodreads/goodreads.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/library.js" />
@@ -128,7 +125,10 @@
         <option value="$PROJECT_DIR$/routes/goodreads.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/node_modules/oauth/lib/oauth.js" />
+        <option value="$PROJECT_DIR$/views/library.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/library.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/books.js" />
       </list>
     </option>
   </component>
@@ -237,6 +237,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooksIn3D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooksIn3D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooksIn3D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooksIn3D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -261,7 +293,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="SearchEverywhereHistory" value="ke" />
+    <property name="SearchEverywhereHistory" value="&#10;ke" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -547,16 +579,16 @@
       <workItem from="1391884303732" duration="43000" />
       <workItem from="1391884376285" duration="1372000" />
       <workItem from="1391925868854" duration="24603000" />
-      <workItem from="1392009813005" duration="6452000" />
+      <workItem from="1392009813005" duration="14505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166676000" />
+    <option name="totallyTimeSpent" value="174729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -565,7 +597,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37813884" sideWeight="0.49923313" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42540622" sideWeight="0.6604795" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47267357" sideWeight="0.6604795" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3899557" sideWeight="0.33952048" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -576,8 +608,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14953987" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14180207" sideWeight="0.5375097" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18711656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3397341" sideWeight="0.5375097" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="710" y="56" width="491" height="213" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -602,10 +634,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app.js</url>
+          <line>209</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app.js</url>
+          <line>61</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="106" />
+      <option name="time" value="108" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -750,19 +794,9 @@
         <state line="125" column="16" selection-start="1945" selection-end="1945" vertical-scroll-proportion="-0.07370518" vertical-offset="2162" max-vertical-offset="15929" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="52" selection-start="4596" selection-end="4596" vertical-scroll-proportion="0.2781186" vertical-offset="2193" max-vertical-offset="3723" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/shelves.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="180" column="0" selection-start="6429" selection-end="6429" vertical-scroll-proportion="0.47239265" vertical-offset="2829" max-vertical-offset="4471" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/books.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="781" selection-end="781" vertical-scroll-proportion="0.6257669" vertical-offset="0" max-vertical-offset="1445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/textureLoader.js">
@@ -821,34 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/library.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="63" selection-start="715" selection-end="715" vertical-scroll-proportion="-0.0" vertical-offset="306" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="73" selection-start="297" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/oauth/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
@@ -891,9 +897,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="73" selection-start="297" selection-end="308" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/library.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="18" selection-start="1642" selection-end="1649" vertical-scroll-proportion="-13.230769" vertical-offset="404" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/library.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="105" selection-start="3312" selection-end="3312" vertical-scroll-proportion="-1.2214022" vertical-offset="2549" max-vertical-offset="4556">
+        <state line="89" column="3" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="5321">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="25" selection-start="5034" selection-end="5034" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="49" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.375" vertical-offset="408" max-vertical-offset="1683">
           <folding />
         </state>
       </provider>

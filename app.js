@@ -58,43 +58,68 @@ if ('development' == app.get('env')) {
 app.get('/', function (req, res) {
     var isLogged = (req.user) ? true : false;
     if (isLogged) {
-        getUserIdFromDb(req.user, function (userid) {
-            if (userid) {
-                req.session.userid = userid;
-            } else {
-                addUserInDb(req.user, function (userid) {
-                    req.session.userid = userid;
-                });
+        isUserInOurDB(req.user, function (rsp) {
+            if (rsp == false) {
+                addUserInDb(req.user);
             }
         });
     }
+
     // render the page
     res.render('index', { title: 'Books in 3D', logged: isLogged, user: req.user});
 
 
-    function getUserIdFromDb(user, callback) {
+    function isUserInOurDB(user, callback) {
         connection.query("SELECT * FROM users WHERE goodreadsid=" + user.id, function (err, result) {
             if (result && result.length > 0) {
-                callback(result[0].userid);
+                callback(true);
             } else {
-                callback(null);
+                callback(false);
             }
         });
     }
 
     function addUserInDb(user, callback) {
         connection.query("INSERT INTO users(goodreadsid,displayname) VALUES ('" + user.id + "','" + user.displayName + "')", function (err, result) {
-            if (!err) {
-                callback(result.insertId);
-            } else {
-                throw err;
+            if (err) {
+                console.log(err);
             }
         });
     }
 
 });
 
-app.get('/library', library.index);
+app.get('/library', ensureAuthenticated, function (req, res) {
+
+    var userid = req.user.id;
+    getBooksFromDb(userid, function (books) {
+        if (!books) books = [];
+        res.render('library', { title: 'Express', books: books});
+
+    });
+});
+
+function getBooksFromDb(userid, callback) {
+    var query = connection.query("SELECT B.coverurl, B.pages FROM books B, users_books U " +
+        "WHERE U.bookisbn = B.bookisbn AND U.goodreadsid='" + userid + "'", function (err, result) {
+        if (err) {
+            console.log(err);
+            callback(null);
+        }
+
+        var books = [];
+        for (var i = 0; i < result.length; i++) {
+            books.push({
+                imageUrl: result[i].coverurl,
+                pages: result[i].pages
+            });
+        }
+
+        callback(books);
+
+    });
+    console.log("query get books from Db", query.sql);
+}
 
 
 /* GOODREADS starts */
@@ -181,12 +206,16 @@ app.get("/updateBooks", function (req, res) {
                         rspHTML += '<img src="' + imgUrl + '" > <br> <br>';
 
                     }
-                    function decreaseZoomAndRemoveCurl(imgUrl) {
-                        return imgUrl.replace(/zoom=[0-9]/, "zoom=1").replace("edge=curl", "edge=");
-                    }
+
+
+                    addInDatabaseBooks(books, coversURL, req.user.id);
 
                     res.writeHead(200, {"Content-Type": "text/html"});
                     res.end(rspHTML);
+
+                    function decreaseZoomAndRemoveCurl(imgUrl) {
+                        return imgUrl.replace(/zoom=[0-9]/, "zoom=1").replace("edge=curl", "edge=");
+                    }
 
                 })
 
@@ -195,13 +224,29 @@ app.get("/updateBooks", function (req, res) {
             });
 
         });
-
-
     }
-
 
     /*here stop update books*/
 });
+
+
+function addInDatabaseBooks(books, coversURL, userid) {
+    var coverLength = coversURL.length, bookisbn, coverurl, pages;
+    for (var i = 0; i < coverLength; i++) {
+        bookisbn = books[i].isbn;
+        pages = books[i].pages;
+        coverurl = coversURL[i];
+
+        var query1 = connection.query("INSERT INTO users_books(goodreadsid,bookisbn) VALUES(" + userid + ", '" + bookisbn + "')", handleInsert);
+        console.log("query1", query1.sql);
+        var query2 = connection.query("INSERT INTO books(bookisbn,coverurl,pages) VALUES('" + bookisbn + "', '" + coverurl + "', " + pages + ")", handleInsert);
+        console.log("query2", query2.sql);
+    }
+    function handleInsert(err, result) {
+        if (err) console.log(err);
+    }
+
+}
 
 passport.serializeUser(function (user, done) {
     done(null, user);

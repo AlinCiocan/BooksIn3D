@@ -26,7 +26,19 @@ var BOOKS = (function () {
         bookHeight: bookHeight,
         bookDepth: bookDepth,
 
-        generateBooks: function (size) {
+        createBooks: function (books) {
+            var booksMeshes = [];
+            var booksLength = books.length;
+            for (var i = 0; i < booksLength; i++) {
+                var book = books[i];
+                booksMeshes.push(this.addBook(200,book.imageUrl));
+            }
+
+            return booksMeshes;
+        },
+
+
+        generateRandomBooks: function (size) {
             var books = [];
             for (var i = 0; i < size; i++) {
                 var pages = Math.floor(Math.random() * 50 + 200);
@@ -36,7 +48,9 @@ var BOOKS = (function () {
             return books;
         },
 
-        addBook: function (numberOfPages, id) {
+
+        addBook: function (numberOfPages, coverUrl, id) {
+            coverUrl = coverUrl || "http://localhost:3000/images/cover.jpg";
             numberOfPages = numberOfPages || 100;
             var pagesWidth = Math.ceil((5 * numberOfPages) / 100), // just a way to differentiate between books with more pages
                 spineCoverWidth = pagesWidth + 2 * coverWidth;
@@ -56,7 +70,7 @@ var BOOKS = (function () {
             var cover = new THREE.Mesh(new THREE.CubeGeometry(coverWidth, bookHeight, pagesDepth + coverWidth), coverMaterial);
             cover.position.z += coverWidth / 2;
 
-            var cover2 = new THREE.Mesh(new THREE.CubeGeometry(coverWidth, bookHeight, pagesDepth + coverWidth), getCoverImage("http://localhost:3000/images/cover.jpg", coverMaterial));
+            var cover2 = new THREE.Mesh(new THREE.CubeGeometry(coverWidth, bookHeight, pagesDepth + coverWidth), getCoverImage(coverUrl, coverMaterial));
             cover2.position.z += coverWidth / 2;
 
             // first cover

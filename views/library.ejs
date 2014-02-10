@@ -39,6 +39,12 @@
     </style>
 </head>
 <body>
-    <script src="/javascripts/library.js"></script>
+
+<script>
+    // add it on global scope
+    window.dbBooks = <%-JSON.stringify(books)%>;
+</script>
+
+<script src="/javascripts/library.js"></script>
 </body>
 </html>
