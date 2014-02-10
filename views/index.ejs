@@ -10,9 +10,9 @@
 <% if(!logged) { %>
 <a href="/login">Login with Goodreads</a>
 <% } else { %>
-<h2>Hello, <%= user.displayName %></h2> <br>
+<h2>Hello, <%= user.displayName %> <%= user.token %> <%= user.tokenSecret %></h2> <br>
 <a href="/library">View library</a> <br>
-<a href="/goodreadsRetrieveBooks">Update books</a> <br>
+<a href="/updateBooks">Update books</a> <br>
 Share link : here library link <br>
 <% } %>
 </body>
