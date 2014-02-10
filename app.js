@@ -99,6 +99,20 @@ app.get('/library', ensureAuthenticated, function (req, res) {
     });
 });
 
+app.get('/library/:id', function (req, res) {
+
+    var userid = req.params.id;
+    getBooksFromDb(userid, function (books) {
+        if (!books) books = [];
+        res.render('library', { title: 'Express', books: books});
+
+    });
+
+
+});
+
+app.get("/ceva/")
+
 function getBooksFromDb(userid, callback) {
     var query = connection.query("SELECT B.coverurl, B.pages FROM books B, users_books U " +
         "WHERE U.bookisbn = B.bookisbn AND U.goodreadsid='" + userid + "'", function (err, result) {
@@ -199,19 +213,18 @@ app.get("/updateBooks", function (req, res) {
 
                     data = JSON.parse(data);
                     for (var i = 0; i < booksISBNs.length; i++) {
-                        var imgUrl = decodeURIComponent(data[booksISBNs[i]].thumbnail_url);
-                        imgUrl = decreaseZoomAndRemoveCurl(imgUrl);
-                        coversURL.push(imgUrl);
-
-                        rspHTML += '<img src="' + imgUrl + '" > <br> <br>';
-
+                        if (data[booksISBNs[i]]) {
+                            var imgUrl = decodeURIComponent(data[booksISBNs[i]].thumbnail_url);
+                            imgUrl = decreaseZoomAndRemoveCurl(imgUrl);
+                            coversURL.push(imgUrl);
+                        }
                     }
 
 
                     addInDatabaseBooks(books, coversURL, req.user.id);
 
                     res.writeHead(200, {"Content-Type": "text/html"});
-                    res.end(rspHTML);
+                    res.end("ok");
 
                     function decreaseZoomAndRemoveCurl(imgUrl) {
                         return imgUrl.replace(/zoom=[0-9]/, "zoom=1").replace("edge=curl", "edge=");

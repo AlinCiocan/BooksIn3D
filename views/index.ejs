@@ -2,18 +2,151 @@
 <html>
 <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+    
+    <style>
+        .site-wrapper-inner {
+            background: url('images/background.jpg') no-repeat;
+            background-size: cover;
+        }
+        
+    </style>
+
 </head>
 <body>
-<h1>Books in 3D</h1>
 
 <% if(!logged) { %>
-<a href="/login">Login with Goodreads</a>
+<% var websiteUrl = "http://localhost:3000" %>
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+            <div class="inner cover">
+
+                <h1 class="cover-heading" style="font-size:96px;">Books in 3D</h1>
+                <br>
+                <br>
+                <br>
+
+                <p class="lead">
+                    <a href="/library" class="btn btn-lg btn-default">Login with <br> <img
+                            src="images/gr_logo.png"></a>
+                </p>
+
+
+            </div>
+            <div class="mastfoot">
+                <div class="inner">
+                    Share:<br>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=<%= websiteUrl %>"><img
+                                src="images/fbShare.png"></a>
+
+                    <a href="http://twitter.com/intent/tweet?source=tweetbutton&text=3D data visualizer for goodreads <%= websiteUrl %>"><img
+                                src="images/twitterShare.png"></a>
+
+                    <a href="http://plus.google.com/share?url=<%= websiteUrl %>"><img src="images/googleShare.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 <% } else { %>
-<h2>Hello, <%= user.displayName %> <%= user.token %> <%= user.tokenSecret %></h2> <br>
-<a href="/library">View library</a> <br>
-<a href="/updateBooks">Update books</a> <br>
-Share link : here library link <br>
+
+<!-- LOGGED section start-->
+
+<%
+    var libraryUrl = "http://localhost:3000/library/" + user.id;
+    var shareUrl = "localhost:3000/library/" + user.id;
+%>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Hello, <%= user.displayName %></h3>
+                    <ul class="nav masthead-nav">
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inner cover">
+
+                <h1 class="cover-heading" style="font-size:96px;">Books in 3D</h1>
+                <br>
+                <br>
+                <br>
+
+                <p class="lead">
+                    <a href="/library" class="btn btn-lg btn-default">View Library</a>
+                </p>
+                <br>
+                <br>
+
+                <p class="lead"><a href="/updateBooks" id="updateLibraryBtn" class="btn btn-lg btn-default">Update
+                        library</a></p><br>
+
+
+            </div>
+            <div class="mastfoot">
+                <div class="inner">
+                    Share link : <input type="text" readonly="true" size="32" style="color:black;"
+                                        value="<%= libraryUrl %>"> <br>
+                    Share:<br>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=<%= libraryUrl %>"><img
+                                src="images/fbShare.png"></a>
+
+                    <a href="http://twitter.com/intent/tweet?source=tweetbutton&text=Check my library in 3D: <%= libraryUrl %>"><img
+                                src="images/twitterShare.png"></a>
+
+                    <a href="http://plus.google.com/share?url=<%= libraryUrl %>"><img src="images/googleShare.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/javascripts/libs/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#updateLibraryBtn").click(function (event) {
+
+            var elem = $(event.target);
+
+            elem.html("Updating library... Please wait...");
+            $.ajax({
+                url: elem.attr("href"),
+                type: "GET"
+            }).done(function (rsp) {
+                elem.html("Libray updated.")
+                setTimeout(function () {
+                    elem.html("Update library");
+                }, 3500);
+            }).fail(function (err) {
+                console.log(err);
+            });
+
+            return false;
+        });
+    });
+
+</script>
 <% } %>
+<!--LOGGED SECTION END-->
 </body>
 </html>

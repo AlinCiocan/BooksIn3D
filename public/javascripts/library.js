@@ -19,7 +19,7 @@ function init() {
     // CAMERA
     camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 10000);
 
-    camera.position.set(0, 300, 300);
+    camera.position.set(0, 500, -300);
 
     controls = new THREE.PointerLockControls(camera);
     scene.add(controls.getObject());
@@ -151,6 +151,7 @@ function fillScene() {
      scene.add(myCube);*/
 
     books = BOOKS.createBooks(dbBooks);
+    // books = BOOKS.generateRandomBooks(10);
     library = SHELVES.addBooksInLibrary(books);
 
     // just for debug purposes
