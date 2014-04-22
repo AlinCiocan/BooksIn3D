@@ -18,7 +18,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -54,9 +54,8 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules />
-    <ui_properties />
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -67,47 +66,38 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="26" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.0" vertical-offset="4312" max-vertical-offset="5542">
+            <state vertical-scroll-proportion="0.0" vertical-offset="535" max-vertical-offset="3009">
+              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <file leaf-file-name="database.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/database.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="505" selection-end="505" vertical-scroll-proportion="-3.2692308" vertical-offset="255" max-vertical-offset="2669">
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="library.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="28" selection-start="5564" selection-end="5564" vertical-scroll-proportion="0.46435452" vertical-offset="2547" max-vertical-offset="3740">
+            <state vertical-scroll-proportion="0.31034482" vertical-offset="330" max-vertical-offset="2088">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PointerLockControls.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/PointerLockControls.js">
+      <file leaf-file-name="books.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/books.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3213">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1394">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <file leaf-file-name="download.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/download.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -127,30 +117,38 @@
         <option value="$PROJECT_DIR$/routes/test.js" />
         <option value="$PROJECT_DIR$/public/javascripts/books3d.js" />
         <option value="$PROJECT_DIR$/public/javascripts/libs/books.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/textureLoader.js" />
         <option value="$PROJECT_DIR$/node_modules/goodreads/lib/goodreads/goodreads.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/routes/library.js" />
         <option value="$PROJECT_DIR$/views/goodreads.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/goodreads.js" />
         <option value="$PROJECT_DIR$/node_modules/oauth/lib/oauth.js" />
         <option value="$PROJECT_DIR$/views/library.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/books.js" />
         <option value="$PROJECT_DIR$/public/javascripts/shelves.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/PointerLockControls.js" />
         <option value="$PROJECT_DIR$/public/javascripts/library.js" />
+        <option value="$PROJECT_DIR$/routes/library.js" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="db-console:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/" />
+        <option value="dbtable:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/booksin3d..users_books" />
+        <option value="dbtable:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/booksin3d..books" />
+        <option value="dbtable:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/booksin3d..users" />
+        <option value="$PROJECT_DIR$/modules/books.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/textureLoader.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/books.js" />
+        <option value="$PROJECT_DIR$/modules/download.js" />
+        <option value="$PROJECT_DIR$/modules/database.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -160,15 +158,30 @@
             <id />
           </State>
           <State>
-            <id>Android Lint</id>
+            <id>Class structure</id>
           </State>
           <State>
-            <id>Plugin DevKit</id>
+            <id>Data flow issues</id>
+          </State>
+          <State>
+            <id>Declaration redundancy</id>
+          </State>
+          <State>
+            <id>Dependency issues</id>
+          </State>
+          <State>
+            <id>Imports</id>
+          </State>
+          <State>
+            <id>Modularization issues</id>
+          </State>
+          <State>
+            <id>Packaging issues</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>UseJBColor</id>
+            <id>Abstraction issues</id>
           </State>
         </selected-state>
       </profile-state>
@@ -190,7 +203,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -202,6 +215,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -247,38 +261,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -297,13 +279,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="booksCovers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooksIn3D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooksIn3D" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,19 +316,22 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="SearchEverywhereHistory" value="&#10;ke" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\booksin3d\BooksIn3D\public\booksCovers" />
       <recent name="G:\NodeJs Projects\BooksIn3D\public\images" />
       <recent name="G:\NodeJs Projects\BooksIn3D\routes" />
       <recent name="G:\NodeJs Projects\BooksIn3D\views" />
       <recent name="G:\NodeJs Projects\BooksIn3D\public\models" />
-      <recent name="G:\NodeJs Projects\BooksIn3D\public\javascripts\libs\threeJSLibs\controls" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\NodeJs Projects\BooksIn3D\public\images" />
@@ -341,22 +339,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -365,11 +347,7 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -385,141 +363,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -537,23 +381,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="1">
@@ -611,48 +442,56 @@
       <workItem from="1391884303732" duration="43000" />
       <workItem from="1391884376285" duration="1372000" />
       <workItem from="1391925868854" duration="24603000" />
-      <workItem from="1392009813005" duration="31020000" />
+      <workItem from="1392009813005" duration="32210000" />
+      <workItem from="1392218243902" duration="705000" />
+      <workItem from="1392317658640" duration="814000" />
+      <workItem from="1397911953416" duration="3789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191244000" />
+    <option name="totallyTimeSpent" value="197742000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44816414" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37813884" sideWeight="0.49923313" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5022157" sideWeight="0.6604795" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3899557" sideWeight="0.33952048" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24514039" sideWeight="0.49923313" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.118743345" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26372775" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18711656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17577548" sideWeight="0.5375097" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15069222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4448052" sideWeight="0.6604795" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3899557" sideWeight="0.33952048" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.267316" sideWeight="0.5375097" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="710" y="56" width="491" height="213" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.4996133" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.4996133" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -666,10 +505,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modules/database.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="114" />
+      <option name="time" value="124" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -677,299 +523,750 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/FirstPersonControls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="0" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="4913" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/library.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="680" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680">
+          <caret line="26" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="21" selection-start="4979" selection-end="4979" vertical-scroll-proportion="0.0" vertical-offset="2567" max-vertical-offset="3417" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/PointerLockControls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="35" selection-start="2748" selection-end="2748" vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3179" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1819">
+          <caret line="76" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/library.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="680" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680">
+          <caret line="26" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="79" selection-start="4430" selection-end="4430" vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="3417" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1819">
+          <caret line="62" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/library.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1819" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/library.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="64" selection-start="1094" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1819" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/library.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="64" selection-start="1094" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="1" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1819" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/library.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="64" selection-start="1094" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="4" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1819" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/library.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="64" selection-start="1094" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="680">
+          <caret line="26" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="29" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="731">
+          <caret line="31" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/libs/three.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="6559" selection-end="6559" vertical-scroll-proportion="0.65700483" vertical-offset="0" max-vertical-offset="12104" />
+        <state vertical-scroll-proportion="0.65700483" vertical-offset="0" max-vertical-offset="12104">
+          <caret line="16" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/libs/myUtils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1207" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1207">
+          <caret line="17" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/Cloth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="1" selection-start="1182" selection-end="1182" vertical-scroll-proportion="1.9164927" vertical-offset="0" max-vertical-offset="4828" />
+        <state vertical-scroll-proportion="1.9164927" vertical-offset="0" max-vertical-offset="4828">
+          <caret line="56" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/EditorControls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="0.7098121" vertical-offset="0" max-vertical-offset="5134" />
+        <state vertical-scroll-proportion="0.7098121" vertical-offset="0" max-vertical-offset="5134">
+          <caret line="20" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/models/book/Book.obj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="380" selection-end="380" vertical-scroll-proportion="-2859.3713" vertical-offset="1301235" max-vertical-offset="1301690" />
+        <state vertical-scroll-proportion="-2859.3713" vertical-offset="1301235" max-vertical-offset="1301690">
+          <caret line="13" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/FirstPersonControls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="84" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.4646681" vertical-offset="2010" max-vertical-offset="4913" />
+        <state vertical-scroll-proportion="0.4646681" vertical-offset="2010" max-vertical-offset="4913">
+          <caret line="131" column="84" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="33" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.52014655" vertical-offset="1008" max-vertical-offset="3247" />
+        <state vertical-scroll-proportion="0.52014655" vertical-offset="1008" max-vertical-offset="3247">
+          <caret line="76" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="16" selection-start="1945" selection-end="1945" vertical-scroll-proportion="-0.07370518" vertical-offset="2162" max-vertical-offset="15929" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/textureLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="53" selection-start="491" selection-end="491" vertical-scroll-proportion="0.5418327" vertical-offset="0" max-vertical-offset="502" />
+        <state vertical-scroll-proportion="-0.07370518" vertical-offset="2162" max-vertical-offset="15929">
+          <caret line="125" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/goodreads/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/goodreads/Cakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/goodreads/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="502">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/goodreads/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="331" selection-end="331" vertical-scroll-proportion="-0.35853133" vertical-offset="387" max-vertical-offset="850" />
+        <state vertical-scroll-proportion="-0.35853133" vertical-offset="387" max-vertical-offset="850">
+          <caret line="13" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="171" selection-end="171" vertical-scroll-proportion="0.32346722" vertical-offset="0" max-vertical-offset="473">
-          <folding />
+        <state vertical-scroll-proportion="0.32346722" vertical-offset="0" max-vertical-offset="473">
+          <caret line="9" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/goodreads/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/goodreads/lib/goodreads/goodreads.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="16" selection-start="4273" selection-end="4273" vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="2431">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="610" max-vertical-offset="2431">
+          <caret line="84" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/js-oauth/lib/jsOAuth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/oauth/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/strategies/session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="11" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1377">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1377">
+          <caret line="60" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/proto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="14" selection-start="5256" selection-end="5256" vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="3978">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="3978">
+          <caret line="192" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/passport/lib/middleware/authenticate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="6" selection-start="11945" selection-end="11945" vertical-scroll-proportion="0.0" vertical-offset="5519" max-vertical-offset="5882">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5519" max-vertical-offset="5882">
+          <caret line="337" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="5559">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="423" max-vertical-offset="5559">
+          <caret line="32" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/oauth/lib/oauth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="9775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/books.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/shelves.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4471">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/library.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="22" selection-start="1544" selection-end="1544" vertical-scroll-proportion="1.4292929" vertical-offset="29" max-vertical-offset="935">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="9775">
+          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="238">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/PointerLockControls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3213">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="3213">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cors/test/example-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cors/test/cors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cors/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3247">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/c2e207f3-607e-44ee-9f1f-ff474a56e276">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>c2e207f3-607e-44ee-9f1f-ff474a56e276</OriginalElement>
+          <nodes>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.slow_log</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_summary_by_host_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.language</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_history_long</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.setup_objects</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_summary_by_digest</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.film_category</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_history_long</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_CMP</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.socket_summary_by_instance</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.session_connect_attrs</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.file_summary_by_instance</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.TABLE_PRIVILEGES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.USER_PRIVILEGES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.accounts</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_summary_by_account_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_TRX</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.COLUMNS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.ndb_binlog_index</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.help_topic</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.slave_master_info</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.mutex_instances</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_CMPMEM_RESET</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_summary_by_account_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.SCHEMATA</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.VIEWS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_TABLESTATS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.film_text</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_CMP_RESET</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.tables_priv</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.COLLATIONS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_summary_global_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_summary_by_thread_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.city</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:world.city</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.inventory</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.slave_relay_log_info</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.actor_info</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.setup_instruments</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_DATAFILES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.proxies_priv</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.time_zone_transition_type</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.PARAMETERS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.film</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.PLUGINS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.TABLE_CONSTRAINTS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.db</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.innodb_table_stats</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_current</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.help_keyword</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.objects_summary_global_by_type</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_summary_global_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_FOREIGN_COLS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.file_summary_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_summary_by_user_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.PROCESSLIST</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_FT_INDEX_TABLE</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_BUFFER_PAGE</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_CMP_PER_INDEX</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.OPTIMIZER_TRACE</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.help_relation</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_COLUMNS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.SESSION_VARIABLES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_current</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.time_zone_leap_second</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.file_instances</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.TABLES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.COLLATION_CHARACTER_SET_APPLICABILITY</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.GLOBAL_STATUS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:booksin3d.users</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.threads</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_FOREIGN</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.columns_priv</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_summary_by_account_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.address</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_summary_by_host_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.plugin</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.user</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.country</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.SCHEMA_PRIVILEGES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_summary_by_host_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.time_zone_transition</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_FT_INDEX_CACHE</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.FILES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.table_lock_waits_summary_by_table</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.hosts</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.film_list</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.setup_actors</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_summary_by_thread_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_history</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.staff</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.rwlock_instances</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_FT_CONFIG</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.film_actor</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.time_zone_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_LOCK_WAITS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.ENGINES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_FT_DELETED</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_INDEXES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.sales_by_film_category</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.setup_timers</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.SESSION_STATUS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.customer</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_FT_BEING_DELETED</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.STATISTICS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.proc</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.PROFILING</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.PARTITIONS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.staff_list</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.nicer_but_slower_film_list</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_TABLESPACES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.GLOBAL_VARIABLES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_history</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.COLUMN_PRIVILEGES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_CMP_PER_INDEX_RESET</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.TABLESPACES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_FIELDS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_summary_by_user_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.socket_instances</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.ROUTINES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_summary_by_user_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.table_io_waits_summary_by_table</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.help_category</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_summary_by_thread_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_SYS_TABLES</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.users</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.general_log</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_history</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:booksin3d.books</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.servers</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.CHARACTER_SETS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.customer_list</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_LOCKS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.TRIGGERS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.procs_priv</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_BUFFER_POOL_STATS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.slave_worker_info</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.innodb_index_stats</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_BUFFER_PAGE_LRU</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.store</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.rental</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:world.countrylanguage</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.REFERENTIAL_CONSTRAINTS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:world.country</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.func</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.cond_instances</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_statements_summary_global_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.host_cache</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.table_io_waits_summary_by_index_usage</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.payment</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_METRICS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_current</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.session_account_connect_attrs</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_CMPMEM</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.INNODB_FT_DEFAULT_STOPWORD</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.EVENTS</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.setup_consumers</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.socket_summary_by_event_name</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.sales_by_store</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:booksin3d.users_books</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_stages_history_long</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.time_zone</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.category</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:information_schema.KEY_COLUMN_USAGE</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.performance_timers</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:mysql.event</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:performance_schema.events_waits_summary_by_instance</node>
+            <node x="" y="">c2e207f3-607e-44ee-9f1f-ff474a56e276.table:sakila.actor</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9055799577029443" x="2115.0" y="2013.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/dd6a1b57-74ae-4d25-b4bf-acc3b837f067">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>dd6a1b57-74ae-4d25-b4bf-acc3b837f067</OriginalElement>
+          <nodes>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.socket_instances</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_summary_by_digest</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.setup_instruments</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_current</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.session_connect_attrs</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.socket_summary_by_instance</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:booksin3d.users</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_summary_by_account_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:world.countrylanguage</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_CMP_RESET</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.setup_actors</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_LOCKS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_CMP_PER_INDEX_RESET</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.func</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.setup_consumers</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_history</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_history</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_TABLESPACES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.COLLATIONS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.file_summary_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_DATAFILES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_FIELDS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.film_category</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.country</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_CMP_PER_INDEX</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_summary_by_thread_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.nicer_but_slower_film_list</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.FILES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.slave_worker_info</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.users</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.ndb_binlog_index</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.TRIGGERS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.PROFILING</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.film_list</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.PARTITIONS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.staff_list</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.KEY_COLUMN_USAGE</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.OPTIMIZER_TRACE</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_history_long</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.actor_info</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_BUFFER_PAGE_LRU</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.general_log</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.payment</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.GLOBAL_VARIABLES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.slow_log</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.ROUTINES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.help_relation</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.time_zone_transition</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_TRX</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.staff</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.host_cache</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_summary_global_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_CMPMEM_RESET</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_FOREIGN_COLS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.mutex_instances</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.user</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.innodb_index_stats</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.event</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.hosts</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.ENGINES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.SESSION_VARIABLES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.time_zone</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.table_lock_waits_summary_by_table</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.sales_by_film_category</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.inventory</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_CMP</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.slave_relay_log_info</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.SCHEMA_PRIVILEGES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_summary_global_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.language</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_current</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_summary_by_host_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.file_summary_by_instance</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_history</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.servers</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_summary_by_host_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_summary_by_account_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.TABLES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_summary_by_user_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.tables_priv</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.columns_priv</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_FT_BEING_DELETED</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.setup_objects</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.customer</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_summary_by_host_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_summary_by_thread_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.PLUGINS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.PROCESSLIST</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_summary_by_user_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.db</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.TABLE_CONSTRAINTS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.SCHEMATA</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.setup_timers</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.proxies_priv</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.USER_PRIVILEGES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_FT_DELETED</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_FT_CONFIG</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.slave_master_info</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_summary_by_user_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.PARAMETERS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.table_io_waits_summary_by_table</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_BUFFER_PAGE</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.help_category</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_FOREIGN</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.table_io_waits_summary_by_index_usage</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.sales_by_store</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.objects_summary_global_by_type</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_summary_global_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_current</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.COLUMNS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_CMPMEM</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.address</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.VIEWS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.file_instances</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_FT_INDEX_TABLE</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.plugin</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.COLLATION_CHARACTER_SET_APPLICABILITY</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.accounts</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.time_zone_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_TABLESTATS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.session_account_connect_attrs</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.COLUMN_PRIVILEGES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:booksin3d.books</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.help_keyword</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_TABLES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:world.city</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.film_actor</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.store</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_METRICS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.socket_summary_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.procs_priv</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_history_long</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.SESSION_STATUS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_summary_by_thread_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_INDEXES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.actor</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.category</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.cond_instances</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.GLOBAL_STATUS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.performance_timers</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:booksin3d.users_books</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.innodb_table_stats</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.time_zone_transition_type</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.rental</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_stages_summary_by_account_by_event_name</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.customer_list</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:world.country</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_waits_summary_by_instance</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_SYS_COLUMNS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.STATISTICS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_FT_DEFAULT_STOPWORD</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.help_topic</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.proc</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.EVENTS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.events_statements_history_long</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:mysql.time_zone_leap_second</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.TABLE_PRIVILEGES</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.CHARACTER_SETS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.threads</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.REFERENTIAL_CONSTRAINTS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.film</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.film_text</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_BUFFER_POOL_STATS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:sakila.city</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_LOCK_WAITS</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.INNODB_FT_INDEX_CACHE</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:performance_schema.rwlock_instances</node>
+            <node x="" y="">dd6a1b57-74ae-4d25-b4bf-acc3b837f067.table:information_schema.TABLESPACES</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="-3238.0" y="7421.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/74e28eaa-a392-4696-9f2c-f99df6af9977">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>74e28eaa-a392-4696-9f2c-f99df6af9977</OriginalElement>
+          <nodes>
+            <node x="" y="">74e28eaa-a392-4696-9f2c-f99df6af9977.table:booksin3d.users</node>
+            <node x="" y="">74e28eaa-a392-4696-9f2c-f99df6af9977.table:booksin3d.books</node>
+            <node x="" y="">74e28eaa-a392-4696-9f2c-f99df6af9977.table:booksin3d.users_books</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.4000000000000001" x="194.0" y="145.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/booksin3d..users">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="dbDummy://dbtable:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/booksin3d..users_books">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="26" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.0" vertical-offset="4312" max-vertical-offset="5542">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/f78c06de/74e28eaa-a392-4696-9f2c-f99df6af9977/booksin3d..books">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="505" selection-end="505" vertical-scroll-proportion="-3.2692308" vertical-offset="255" max-vertical-offset="2669">
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-11.653846" vertical-offset="54" max-vertical-offset="2669">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/library.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.423077" vertical-offset="63" max-vertical-offset="935">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/shelves.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3004" max-vertical-offset="4471">
+          <caret line="189" column="15" selection-start-line="189" selection-start-column="15" selection-end-line="189" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/textureLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="28" selection-start="5564" selection-end="5564" vertical-scroll-proportion="0.46435452" vertical-offset="2547" max-vertical-offset="3740">
+        <state vertical-scroll-proportion="-11.64" vertical-offset="2208" max-vertical-offset="3740">
+          <caret line="152" column="23" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="1683">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="790" max-vertical-offset="3009">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/download.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1394">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31034482" vertical-offset="330" max-vertical-offset="2088">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -10,9 +10,9 @@ var SHELVES = (function () {
             z: 0
         },// the width of the room with is the depth of shelves blocks
     /* shelves constants */
-        numberOfShelves = 5,
+        numberOfShelves = 2,
         shelvesDepth = 70,
-        shelvesWidth = 200,
+        shelvesWidth = 500,
         shelfHeight = 100,
         shelfThickness = 3,
         numberOfBlocksInCloset = 3, //!! must be bigger than 0(zero)

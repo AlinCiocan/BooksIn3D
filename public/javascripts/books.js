@@ -31,7 +31,7 @@ var BOOKS = (function () {
             var booksLength = books.length;
             for (var i = 0; i < booksLength; i++) {
                 var book = books[i];
-                booksMeshes.push(this.addBook(200,book.imageUrl));
+                booksMeshes.push(this.addBook(200, book.imageUrl));
             }
 
             return booksMeshes;
@@ -50,7 +50,7 @@ var BOOKS = (function () {
 
 
         addBook: function (numberOfPages, coverUrl, id) {
-            coverUrl = coverUrl || "http://localhost:3000/images/cover.jpg";
+            coverUrl = coverUrl || "/images/cover.jpg";
             numberOfPages = numberOfPages || 100;
             var pagesWidth = Math.ceil((5 * numberOfPages) / 100), // just a way to differentiate between books with more pages
                 spineCoverWidth = pagesWidth + 2 * coverWidth;

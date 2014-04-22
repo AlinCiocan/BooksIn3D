@@ -4,15 +4,9 @@
 
 var TextureLoader = (function () {
 
-    var ABSOLUTE_URL = "http://localhost:3000/";
-
     return {
-        loadLocal: function (url) {
-            return THREE.ImageUtils.loadTexture(ABSOLUTE_URL + url);
-        },
-
-        loadlocalImage: function (imageName) {
-            return THREE.ImageUtils.loadTexture(ABSOLUTE_URL + "images/" + imageName);
+        loadLocalImage: function (imageName) {
+            return THREE.ImageUtils.loadTexture("images/" + imageName);
         },
 
         loadImage: function (url) {

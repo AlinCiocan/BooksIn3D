@@ -20,7 +20,7 @@
 <body>
 
 <% if(!logged) { %>
-<% var websiteUrl = "http://localhost:3000" %>
+<% var websiteUrl = baseUrl %>
 <div class="site-wrapper">
 
     <div class="site-wrapper-inner">
@@ -60,11 +60,11 @@
 
 <% } else { %>
 
-<!-- LOGGED section start-->
+<!-- LOGGED section start -->
 
 <%
-    var libraryUrl = "http://localhost:3000/library/" + user.id;
-    var shareUrl = "localhost:3000/library/" + user.id;
+    var libraryUrl = baseUrl + "/library/" + user.id;
+    var shareUrl = baseUrl + "/library/" + user.id;
 %>
 
 <div class="site-wrapper">
