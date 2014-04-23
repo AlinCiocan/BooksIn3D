@@ -15,7 +15,7 @@ connection.connect();
 
 exports.getBooksFromDb = function (userid, callback) {
     var query = connection.query("SELECT B.bookisbn, B.pages FROM books B, users_books U " +
-        "WHERE U.bookisbn = B.bookisbn AND U.goodreadsid='" + userid + "'", function (err, result) {
+        "WHERE U.bookisbn = B.bookisbn AND U.goodreadsid ='" + userid + "'", function (err, result) {
         if (err) {
             console.log(err);
             callback(null);

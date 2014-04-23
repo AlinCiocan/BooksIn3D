@@ -2,9 +2,9 @@ CREATE DATABASE  IF NOT EXISTS `booksin3d` /*!40100 DEFAULT CHARACTER SET utf8 *
 USE `booksin3d`;
 -- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
 --
--- Host: 127.0.0.1    Database: booksin3d
+-- Host: localhost    Database: booksin3d
 -- ------------------------------------------------------
--- Server version	5.6.15
+-- Server version	5.6.17
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -38,7 +38,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('23911929','Alin Ciocan'),('4113116','Simona-Elena Cristea');
+INSERT INTO `users` VALUES ('23315767','Cosmin Acostachioaei'),('23911929','Alin Ciocan'),('30753212','Books In');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-02-10 20:34:30
+-- Dump completed on 2014-04-23  9:08:56
