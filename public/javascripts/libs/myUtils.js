@@ -7,15 +7,21 @@
  */
 
 var DEBUG_MODE = true;
-
+if(DEBUG_MODE) {
+    console.warn("DEBUG_MODE IS ON!")
+}
 var RADIANS_CONVERSION = Math.PI / 180;
 // convert an angle from degree to radians
-function degreeToRad(angle) {
+function degreeToRadians(angle) {
     return angle * RADIANS_CONVERSION;
 }
 
-function RadToDegree(angle) {
+function radiusToDegree(angle) {
     return angle / RADIANS_CONVERSION;
+}
+
+function getRandomColor() {
+    return (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6);
 }
 
 // shorthand for console.log
@@ -37,30 +43,28 @@ Array.prototype.remove = function (elem) {
     return this;
 };
 
+function getPointLight(dist) {
+    console.warn("Warning: method getPointLight is not tested!");
+    var pointLight = new THREE.Object3D();
+    var light = new THREE.PointLight(0x404040, 1, dist || 500);
+    var sphere = new THREE.Mesh(new THREE.SphereGeometry(10), new THREE.MeshBasicMaterial({color: 0x0000ff}));
 
-function getNewDirectLight(intensity) {
-    var newLight = new THREE.DirectionalLight(0xFFFFFF, intensity || 1.0);
-    var sphereLight = new THREE.Mesh(new THREE.SphereGeometry(10), new THREE.MeshBasicMaterial({color: 0xff0000}));
-    // whenever the light moves, the sphere will move too
-    sphereLight.position = newLight.position; // objects will share the same object for position
+    pointLight.add(light);
+    pointLight.add(sphere);
 
-    if (DEBUG_MODE) {
-        scene.add(sphereLight);
-    }
-    scene.add(newLight);
-    return newLight;
+    scene.add(pointLight);
+    return pointLight;
 }
 
-/** TODO: Implement here
-function getNewPointLight(intensity) {
+function getDirectionalLight(intensity, color) {
     var newLight = new THREE.DirectionalLight(0xFFFFFF, intensity || 1.0);
-    var sphereLight = new THREE.Mesh(new THREE.SphereGeometry(10), new THREE.MeshBasicMaterial({color: 0xff0000}));
-    // whenever the light moves, the sphere will move too
-    sphereLight.position = newLight.position; // objects will share the same object for position
+    var sphereLight = new THREE.Mesh(new THREE.SphereGeometry(10), new THREE.MeshBasicMaterial({color: color || 0xff0000}));
 
+    var container = new THREE.Object3D();
+    container.add(newLight);
     if (DEBUG_MODE) {
-        scene.add(sphereLight);
+        container.add(sphereLight);
     }
-    scene.add(newLight);
-    return newLight;
-}       */
+    scene.add(container);
+    return container;
+}

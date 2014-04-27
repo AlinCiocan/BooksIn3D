@@ -58,12 +58,13 @@ var BOOKS = (function () {
             var book = new THREE.Object3D();
 
             // pages
-            var pagesMaterial = new THREE.MeshBasicMaterial({color: "white"});
+            var pagesMaterial = new THREE.MeshLambertMaterial({color: "white"});
             var pages = new THREE.Mesh(new THREE.CubeGeometry(pagesWidth, pagesHeight, pagesDepth), pagesMaterial);
             book.add(pages);
 
             // covers
-            var coverMaterial = new THREE.MeshLambertMaterial({color: '#' + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6)});
+            var coverColor = 0xD9DEDD;
+            var coverMaterial = new THREE.MeshLambertMaterial({color: '#' + coverColor});
             var spineBook = new THREE.Mesh(new THREE.CubeGeometry(spineCoverWidth, bookHeight, coverWidth), coverMaterial);
             spineBook.position.z -= pagesDepth / 2 + coverWidth / 2;
             book.add(spineBook);

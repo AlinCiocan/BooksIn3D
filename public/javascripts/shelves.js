@@ -10,12 +10,12 @@ var SHELVES = (function () {
             z: 0
         },// the width of the room with is the depth of shelves blocks
     /* shelves constants */
-        numberOfShelves = 2,
-        shelvesDepth = 70,
-        shelvesWidth = 500,
+        numberOfShelves = 5,
+        shelvesDepth = 100,
+        shelvesWidth = 300,
         shelfHeight = 100,
-        shelfThickness = 3,
-        numberOfBlocksInCloset = 3, //!! must be bigger than 0(zero)
+        shelfThickness = 7,
+        numberOfBlocksInCloset = 2, //!! must be bigger than 0(zero)
         distanceBetweenBooksInShelf = 10,
         offsetForBooksAngle = 20, // a heuristic offset for books (due to 'y' rotation)
         bookRotationAngle = 25, // in degrees
@@ -62,7 +62,7 @@ var SHELVES = (function () {
             closet.add(unitBlock2);
 
 
-            unitBlock2.rotation.y += degreeToRad(180); // reverse
+            unitBlock2.rotation.y += degreeToRadians(180); // reverse
 
             unitBlock2.position.x -= unitBlock1.width - shelvesWidth - shelfThickness;
             unitBlock2.position.z += unitBlock1.depth;
@@ -125,7 +125,7 @@ var SHELVES = (function () {
         // be minus the thickness of the left plank
         var insidePlankWidth = shelvesWidth + shelfThickness * (addLeftPlank ? 2 : 1);
 
-        var insidePlankMaterial = new THREE.MeshLambertMaterial({color: "pink"});
+        var insidePlankMaterial = new THREE.MeshLambertMaterial({color: 0xAD855C });
 
         // create an array with six textures for a cool cube
         var materialArray = [];
@@ -240,9 +240,9 @@ var SHELVES = (function () {
             book.position.z = currentShelf.z;
 
             if (currentShelf.side == FLIPPED) {
-                book.rotation.y += degreeToRad(bookRotationAngle);
+                book.rotation.y += degreeToRadians(bookRotationAngle);
             } else {
-                book.rotation.y -= degreeToRad(bookRotationAngle);
+                book.rotation.y -= degreeToRadians(bookRotationAngle);
             }
 
 

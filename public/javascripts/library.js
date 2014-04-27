@@ -7,8 +7,9 @@
 
 var container, stats;
 var camera, scene, renderer, controls, time = Date.now();
-
-
+var books, library, floor;
+var FLOOR_SIZE = 10000;
+var light;
 function init() {
     container = document.createElement('div');
     document.body.appendChild(container);
@@ -126,39 +127,40 @@ function init() {
     window.addEventListener('resize', onWindowResize, false);
 }
 
+var changeGround;
+
 function fillScene() {
-    var cube = new THREE.Mesh(new THREE.CubeGeometry(100, 600, 50), new THREE.MeshLambertMaterial({color: "red"}));
-    cube.position.z -= 200;
-    // scene.add(cube);
-
-    light = getNewDirectLight();
+    light = getDirectionalLight();
     light.position.set(-2074, 500, 400);
-    scene.add(light);
 
-    light = getNewDirectLight();
-    light.position.set(-174, 800, -500);
-    scene.add(light);
-
+    light = getDirectionalLight();
+    light.position.set(226, 800, -900);
+    var directionalLight = light.children[0];
+    directionalLight.target.position.set(0, 0, -3000);
 
     var floorTexture = TextureLoader.loadLocalImage("ground.jpg");
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set(100, 100);
-    floor = new THREE.Mesh(new THREE.PlaneGeometry(1000, 1000), new THREE.MeshBasicMaterial({map: floorTexture}));
-    floor.rotateX(degreeToRad(-90));
+
+    changeGround = function (pic, nr) {
+        var floorTexture = TextureLoader.loadLocalImage("ground" + (pic || "") + ".jpg");
+        floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
+        floorTexture.repeat.set(nr || 100, nr || 100);
+        floor.material = new THREE.MeshBasicMaterial({map: floorTexture});
+    };
+
+    floor = new THREE.Mesh(new THREE.PlaneGeometry(FLOOR_SIZE, FLOOR_SIZE), new THREE.MeshBasicMaterial({map: floorTexture}));
+    floor.rotateX(degreeToRadians(-90));
     scene.add(floor);
 
-    /*    myCube = new THREE.Mesh( new THREE.CubeGeometry(20,20,20) , new THREE.MeshBasicMaterial({color:"red"}) );
-     scene.add(myCube);*/
 
     books = BOOKS.createBooks(dbBooks);
     // books = BOOKS.generateRandomBooks(10);
     library = SHELVES.addBooksInLibrary(books);
+    library.position.z = -3000;
+    library.rotation.y -= degreeToRadians(180);
 
-    // just for debug purposes
-    /*    for (var contor = 0; contor < books.length; contor++) {
-     scene.add(books[contor]);
-     }
-     scene.remove(library);*/
+    changeGround(5,50);
 }
 
 function loadOBJFile(objFile, callback) {
@@ -176,6 +178,13 @@ function loadOBJFile(objFile, callback) {
         // the contract of the callback
         callback(object);
     });
+}
+
+function createWalls() {
+    var wallGeometry = new THREE.PlaneGeometry(FLOOR_SIZE, FLOOR_SIZE);
+    var wallMaterial = new THREE.MeshLambertMaterial(FLOOR_SIZE, FLOOR_SIZE);
+
+
 }
 
 function onWindowResize() {
