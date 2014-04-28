@@ -130,6 +130,7 @@ function init() {
 var changeGround;
 
 function fillScene() {
+
     light = getDirectionalLight();
     light.position.set(-2074, 500, 400);
 
@@ -160,7 +161,7 @@ function fillScene() {
     library.position.z = -3000;
     library.rotation.y -= degreeToRadians(180);
 
-    changeGround(5,50);
+    changeGround(5, 50);
 }
 
 function loadOBJFile(objFile, callback) {
@@ -180,10 +181,37 @@ function loadOBJFile(objFile, callback) {
     });
 }
 
+// TODO: not sure if it actually looks that good
 function createWalls() {
-    var wallGeometry = new THREE.PlaneGeometry(FLOOR_SIZE, FLOOR_SIZE);
-    var wallMaterial = new THREE.MeshLambertMaterial(FLOOR_SIZE, FLOOR_SIZE);
+    var WALL_HEIGHT = 2000;
+    var FLOOR_SIZE_2 = (FLOOR_SIZE / 2);
 
+    var wallGeometry = new THREE.PlaneGeometry(FLOOR_SIZE, WALL_HEIGHT);
+    var wallMaterial = new THREE.MeshLambertMaterial({color: "green", side: THREE.DoubleSide});
+
+    var wall1, wall2, wall3, wall4;
+    wall1 = new THREE.Mesh(wallGeometry, wallMaterial);
+
+
+    wall1.position.y += WALL_HEIGHT / 2;
+
+
+    wall2 = wall1.clone();
+    wall3 = wall1.clone();
+    wall4 = wall1.clone();
+
+
+    wall1.position.z -= FLOOR_SIZE_2;
+
+    wall2.position.z += FLOOR_SIZE_2;
+
+
+    //  wall2.position.x -= FLOOR_SIZE_2;
+
+    scene.add(wall1);
+     scene.add(wall2);
+     /*  scene.add(wall3);
+     scene.add(wall4);*/
 
 }
 

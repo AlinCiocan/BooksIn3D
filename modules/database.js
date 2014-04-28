@@ -32,11 +32,11 @@ exports.getBooksFromDb = function (userid, callback) {
         callback(books);
 
     });
-    console.log("query get books from Db", query.sql);
 };
 
 
 exports.addInDatabaseBooks = function (books, coversURL, userid) {
+
     var coverLength = coversURL.length, bookisbn, coverurl, pages;
     for (var i = 0; i < coverLength; i++) {
         bookisbn = books[i].isbn;
@@ -50,9 +50,9 @@ exports.addInDatabaseBooks = function (books, coversURL, userid) {
 
 
         var query1 = connection.query("INSERT INTO users_books(goodreadsid,bookisbn) VALUES(" + userid + ", '" + bookisbn + "')", handleInsert);
-        console.log("query1", query1.sql);
+    //    console.log("query1", query1.sql);
         var query2 = connection.query("INSERT INTO books(bookisbn,pages) VALUES('" + bookisbn + "', '" + pages + "')", handleInsert);
-        console.log("query2", query2.sql);
+    //    console.log("query2", query2.sql);
 
 
     }

@@ -70,12 +70,7 @@ app.get('/library/:id', function (req, res) {
         res.render('library', { title: 'Express', books: books});
 
     });
-
-
 });
-
-
-
 
 
 
@@ -114,6 +109,8 @@ app.get("/updateBooks", function (req, res) {
 });
 
 /* GOODREADS starts */
+
+
 passport.serializeUser(function (user, done) {
     done(null, user);
 });
@@ -121,6 +118,8 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (obj, done) {
     done(null, obj);
 });
+
+
 passport.use(new GoodreadsStrategy({
         consumerKey: key,
         consumerSecret: secret,

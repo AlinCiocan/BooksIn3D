@@ -18,6 +18,8 @@
     "passport-goodreads": "~0.1.2",
     "passport": "~0.2.0",
     "cors": "~2.2.0",
-    "request": "^2.34.0"
+    "request": "^2.34.0",
+    "sync": "^0.2.2",
+    "async": "^0.7.0"
   }
 }
