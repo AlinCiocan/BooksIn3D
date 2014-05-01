@@ -24,7 +24,7 @@ exports.getBooksFromDb = function (userid, callback) {
         var books = [];
         for (var i = 0; i < result.length; i++) {
             books.push({
-                imageUrl: (download.getCoverPath() + result[i].bookisbn + ".png").replace("\\","/"),
+                imageUrl: (download.getCoverPath() + result[i].bookisbn + ".png").replace("\\", "/"),
                 pages: result[i].pages
             });
         }
@@ -43,19 +43,12 @@ exports.addInDatabaseBooks = function (books, coversURL, userid) {
         pages = books[i].pages;
         coverurl = coversURL[i];
 
-        // TODO: check if file already exists
-        download.saveImage(coverurl, bookisbn + ".png", function (err) {
-            if (err) throw err;
-        });
+        download.saveImage(coverurl, bookisbn + ".png");
 
-
-        var query1 = connection.query("INSERT INTO users_books(goodreadsid,bookisbn) VALUES(" + userid + ", '" + bookisbn + "')", handleInsert);
-    //    console.log("query1", query1.sql);
-        var query2 = connection.query("INSERT INTO books(bookisbn,pages) VALUES('" + bookisbn + "', '" + pages + "')", handleInsert);
-    //    console.log("query2", query2.sql);
-
-
+        connection.query("INSERT INTO users_books(goodreadsid,bookisbn) VALUES(" + userid + ", '" + bookisbn + "')", handleInsert);
+        connection.query("INSERT INTO books(bookisbn,pages) VALUES('" + bookisbn + "', '" + pages + "')", handleInsert);
     }
+
     function handleInsert(err, result) {
         if (err) console.log(err);
     }

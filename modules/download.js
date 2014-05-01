@@ -9,15 +9,26 @@ exports.getCoverPath = function () {
     return COVERS_PATH.replace("\\public", "");
 };
 
-exports.saveImage = function (uri, filename, callback) {
-    request.head(uri, function (err, res, body) {
+function downloadImage(uri, filePath) {
+    request(uri).pipe(fs.createWriteStream(filePath)).on('close', function (err) {
+        if (err) console.log(err);
+    });
+}
 
-        console.log("Downloaded: ", uri);
-        console.log('content-type:', res.headers['content-type']);
-        console.log('content-length:', res.headers['content-length']);
+function ifFileNotFound(filePath, callback) {
+    fs.stat(filePath, function (err) {
+        if (err) {
+            callback();
+        }
+    });
+}
 
 
-        request(uri).pipe(fs.createWriteStream(COVERS_PATH + filename)).on('close', callback);
+exports.saveImage = function (uri, filename) {
+    var filePath = COVERS_PATH + filename;
+
+    ifFileNotFound(filePath, function () {
+        downloadImage(uri, filePath);
     });
 };
 

@@ -31,9 +31,9 @@ var BOOKS = (function () {
             var booksLength = books.length;
             for (var i = 0; i < booksLength; i++) {
                 var book = books[i];
-                booksMeshes.push(this.addBook(200, book.imageUrl));
+                book = this.addBook(200, book.imageUrl);
+                booksMeshes.push(book);
             }
-
             return booksMeshes;
         },
 
