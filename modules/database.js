@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
     password: '1234',
     database: "booksin3d"
 });
-connection.connect();
+// connection.connect();
 
 
 exports.getBooksFromDb = function (userid, callback) {

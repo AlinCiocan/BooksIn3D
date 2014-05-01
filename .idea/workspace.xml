@@ -64,6 +64,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="database.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/database.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="3" selection-start="251" selection-end="251" vertical-scroll-proportion="0.4868735" vertical-offset="0" max-vertical-offset="1360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="books.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/books.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,10 +82,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="library.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="library.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="40" selection-start="5070" selection-end="5070" vertical-scroll-proportion="0.3484487" vertical-offset="2353" max-vertical-offset="4369">
+            <state line="156" column="0" selection-start="5221" selection-end="5221" vertical-scroll-proportion="0.0" vertical-offset="2251" max-vertical-offset="4369">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="37" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
               <folding />
             </state>
           </provider>
@@ -128,8 +146,8 @@
         <option value="$PROJECT_DIR$/public/javascripts/libs/threeJSLibs/controls/PointerLockControls.js" />
         <option value="$PROJECT_DIR$/modules/books.js" />
         <option value="$PROJECT_DIR$/modules/download.js" />
-        <option value="$PROJECT_DIR$/modules/database.js" />
         <option value="$PROJECT_DIR$/public/javascripts/books.js" />
+        <option value="$PROJECT_DIR$/modules/database.js" />
       </list>
     </option>
   </component>
@@ -223,56 +241,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BooksIn3D" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="booksCovers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -626,12 +594,12 @@
       <workItem from="1398530738147" duration="104000" />
       <workItem from="1398530867193" duration="15124000" />
       <workItem from="1398704893135" duration="1986000" />
-      <workItem from="1398947145364" duration="5191000" />
+      <workItem from="1398947145364" duration="6436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220291000" />
+    <option name="totallyTimeSpent" value="221536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
@@ -1257,13 +1225,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="11" selection-start="326" selection-end="326" vertical-scroll-proportion="0.36093417" vertical-offset="0" max-vertical-offset="2669" />
@@ -1304,13 +1265,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/request/request.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="335" column="52" selection-start="10353" selection-end="10353" vertical-scroll-proportion="0.33254156" vertical-offset="5555" max-vertical-offset="22916" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.83770883" vertical-offset="567" max-vertical-offset="1360">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/download.js">
@@ -1357,7 +1311,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/library.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="40" selection-start="5070" selection-end="5070" vertical-scroll-proportion="0.3484487" vertical-offset="2353" max-vertical-offset="4369">
+        <state line="156" column="0" selection-start="5221" selection-end="5221" vertical-scroll-proportion="0.0" vertical-offset="2251" max-vertical-offset="4369">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="37" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="251" selection-end="251" vertical-scroll-proportion="0.4868735" vertical-offset="0" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
