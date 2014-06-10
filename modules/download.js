@@ -10,6 +10,7 @@ exports.getCoverPath = function () {
 };
 
 function downloadImage(uri, filePath) {
+    console.log("right now dowloading: ", filePath, " url: ", uri);
     request(uri).pipe(fs.createWriteStream(filePath)).on('close', function (err) {
         if (err) console.log(err);
     });
@@ -27,7 +28,9 @@ function ifFileNotFound(filePath, callback) {
 exports.saveImage = function (uri, filename) {
     var filePath = COVERS_PATH + filename;
 
+    console.log("----->Trying to save: ", filePath, "uri: ", uri);
     ifFileNotFound(filePath, function () {
+        console.log("----->Trying to save:222 ", filePath);
         downloadImage(uri, filePath);
     });
 };

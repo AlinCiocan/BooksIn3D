@@ -40,6 +40,12 @@ if ('development' == app.get('env')) {
 
 
 // Routes
+app.get("/testpg",function(req,res) {
+    database.testPg(req,res);
+});
+
+
+
 app.get('/', function (req, res) {
     var isLogged = (req.user) ? true : false;
     if (isLogged) {

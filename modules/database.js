@@ -1,17 +1,49 @@
 /**
  * Created by aciocan on 4/22/2014.
  */
-var mysql = require("mysql");
+var pg = require("pg");
 var download = require("./download");
 
-var connection = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: '1234',
-    database: "booksin3d"
-});
-// connection.connect();
+var connectionString = "postgres://postgres:1234@localhost:5433/booksin3d";
 
+
+var connection = (function () {
+    return {
+        query: function (stringQuery, callback,parametersArray) {
+            pg.connect(connectionString, function (err, client, done) {
+                if (err) {
+                    return console.error('error fetching client from pool', err);
+                }
+                client.query(stringQuery, parametersArray, function (err, result) {
+                    //call `done()` to release the client back to the pool
+                    done();
+
+                    callback(err, result);
+                });
+            });
+        }
+    };
+
+})();
+
+
+exports.testPg = function (req,res) {
+    connection.query("SELECT * FROM users", function(err, result) {
+        if(err) {
+            console.log("error from testpg", err);
+            res.send("Failed connection to database");
+        }
+        res.send("It works connection to database.")
+    });
+};
+
+exports.addUserInDb = function (user, callback) {
+    connection.query("INSERT INTO users(goodreadsid,displayname) VALUES ('" + user.id + "','" + user.displayName + "')", function (err, result) {
+        if (err) {
+            console.log(err);
+        }
+    });
+};
 
 exports.getBooksFromDb = function (userid, callback) {
     var query = connection.query("SELECT B.bookisbn, B.pages FROM books B, users_books U " +
@@ -22,10 +54,10 @@ exports.getBooksFromDb = function (userid, callback) {
         }
 
         var books = [];
-        for (var i = 0; i < result.length; i++) {
+        for (var i = 0; i < result.rows.length; i++) {
             books.push({
-                imageUrl: (download.getCoverPath() + result[i].bookisbn + ".png").replace("\\", "/"),
-                pages: result[i].pages
+                imageUrl: (download.getCoverPath() + result.rows[i].bookisbn + ".png").replace("\\", "/"),
+                pages: result.rows[i].pages
             });
         }
 
@@ -45,8 +77,11 @@ exports.addInDatabaseBooks = function (books, coversURL, userid) {
 
         download.saveImage(coverurl, bookisbn + ".png");
 
-        connection.query("INSERT INTO users_books(goodreadsid,bookisbn) VALUES(" + userid + ", '" + bookisbn + "')", handleInsert);
         connection.query("INSERT INTO books(bookisbn,pages) VALUES('" + bookisbn + "', '" + pages + "')", handleInsert);
+        connection.query("INSERT INTO users_books(goodreadsid,bookisbn) VALUES(" + userid + ", '" + bookisbn + "')", handleInsert);
+
+
+
     }
 
     function handleInsert(err, result) {
@@ -58,7 +93,7 @@ exports.addInDatabaseBooks = function (books, coversURL, userid) {
 
 exports.isUserInOurDB = function (user, callback) {
     connection.query("SELECT * FROM users WHERE goodreadsid=" + user.id, function (err, result) {
-        if (result && result.length > 0) {
+        if (result && result.rows && result.rows.length > 0) {
             callback(true);
         } else {
             callback(false);
@@ -66,10 +101,3 @@ exports.isUserInOurDB = function (user, callback) {
     });
 };
 
-exports.addUserInDb = function (user, callback) {
-    connection.query("INSERT INTO users(goodreadsid,displayname) VALUES ('" + user.id + "','" + user.displayName + "')", function (err, result) {
-        if (err) {
-            console.log(err);
-        }
-    });
-};
