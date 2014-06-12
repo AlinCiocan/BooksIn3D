@@ -3,8 +3,10 @@
  */
 var pg = require("pg");
 var download = require("./download");
+var localConnectionString = "postgres://postgres:1234@localhost:5433/booksin3d";
 
-var connectionString = "postgres://postgres:1234@localhost:5433/booksin3d";
+
+var connectionString = process.env.DATABASE_URL || localConnectionString; //if env is undefined, then take local conn string
 
 
 var connection = (function () {
@@ -31,7 +33,8 @@ exports.testPg = function (req,res) {
     connection.query("SELECT * FROM users", function(err, result) {
         if(err) {
             console.log("error from testpg", err);
-            res.send("Failed connection to database");
+
+            res.send("Failed connection to database:" + JSON.stringify(err));
         }
         res.send("It works connection to database.")
     });
@@ -46,7 +49,7 @@ exports.addUserInDb = function (user, callback) {
 };
 
 exports.getBooksFromDb = function (userid, callback) {
-    var query = connection.query("SELECT B.bookisbn, B.pages FROM books B, users_books U " +
+    connection.query("SELECT B.bookisbn, B.pages FROM books B, users_books U " +
         "WHERE U.bookisbn = B.bookisbn AND U.goodreadsid ='" + userid + "'", function (err, result) {
         if (err) {
             console.log(err);

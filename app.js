@@ -1,14 +1,19 @@
 /**
  * Module dependencies.
  */
-var BASE_URL = "http://localhost:3000";
+
+var isDebugMode = (process.env.DATABASE_URL) ? false : true;
+
+
+var localUrl = "http://localhost:3000";
+var liveUrl = "http://booksin3d.herokuapp.com/";
+var BASE_URL = (isDebugMode) ? localUrl : liveUrl;
 
 var express = require('express');
 var database = require("./modules/database");
 var http = require('http');
 var path = require('path');
 var books = require("./modules/books");
-var download = require("./modules/download").download;
 
 var app = express();
 
