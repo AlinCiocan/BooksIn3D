@@ -11,6 +11,7 @@ var BASE_URL = (isDebugMode) ? localUrl : liveUrl;
 
 var express = require('express');
 var database = require("./modules/database");
+var fileStore = require("./modules/file-store");
 var http = require('http');
 var path = require('path');
 var books = require("./modules/books");
@@ -47,6 +48,11 @@ if ('development' == app.get('env')) {
 // Routes
 app.get("/testpg",function(req,res) {
     database.testPg(req,res);
+});
+
+
+app.get("/testaws",function(req,res) {
+    fileStore.testAws(req,res);
 });
 
 

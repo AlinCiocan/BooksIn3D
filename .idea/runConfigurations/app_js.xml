@@ -1,5 +1,9 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" application-parameters="C:\Users\AlinC\AppData\Roaming\npm\node_modules\supervisor\lib\cli-wrapper.js –no-restart-on error" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="AWS_SECRET_ACCESS_KEY" value="LlF1z4E7lGcwOaxCHwSlgrgibDNhB1xwYO8Q65Ov" />
+      <env name="AWS_ACCESS_KEY_ID" value="AKIAJ34V46JYOGTJGTJQ" />
+    </envs>
     <browser start="false" url="http://localhost:3000" with-js-debugger="false" />
     <RunnerSettings RunnerId="NodeJS.debug" />
     <RunnerSettings RunnerId="NodeJS.run" />
