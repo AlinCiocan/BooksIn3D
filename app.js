@@ -51,12 +51,6 @@ app.get("/testpg",function(req,res) {
 });
 
 
-app.get("/testaws",function(req,res) {
-    fileStore.testAws(req,res);
-});
-
-
-
 app.get('/', function (req, res) {
     var isLogged = (req.user) ? true : false;
     if (isLogged) {

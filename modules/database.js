@@ -3,6 +3,7 @@
  */
 var pg = require("pg");
 var download = require("./download");
+var fileStore = require("./file-store");
 var localConnectionString = "postgres://postgres:1234@localhost:5433/booksin3d";
 
 
@@ -59,7 +60,7 @@ exports.getBooksFromDb = function (userid, callback) {
         var books = [];
         for (var i = 0; i < result.rows.length; i++) {
             books.push({
-                imageUrl: (download.getCoverPath() + result.rows[i].bookisbn + ".png").replace("\\", "/"),
+                imageUrl: fileStore.getCoverUrl(result.rows[i].bookisbn),
                 pages: result.rows[i].pages
             });
         }
@@ -78,8 +79,7 @@ exports.addInDatabaseBooks = function (books, coversURL, userid) {
         pages = books[i].pages;
         coverurl = coversURL[i];
 
-        download.saveImage(coverurl, bookisbn + ".png");
-
+        fileStore.storeBookCover(coverurl,bookisbn);
         connection.query("INSERT INTO books(bookisbn,pages) VALUES('" + bookisbn + "', '" + pages + "')", handleInsert);
         connection.query("INSERT INTO users_books(goodreadsid,bookisbn) VALUES(" + userid + ", '" + bookisbn + "')", handleInsert);
 
