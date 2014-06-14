@@ -2,7 +2,6 @@
  * Created by aciocan on 4/22/2014.
  */
 var pg = require("pg");
-var download = require("./download");
 var fileStore = require("./file-store");
 var localConnectionString = "postgres://postgres:1234@localhost:5433/booksin3d";
 

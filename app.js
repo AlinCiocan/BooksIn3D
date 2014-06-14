@@ -44,12 +44,29 @@ if ('development' == app.get('env')) {
 }
 
 
-
 // Routes
-app.get("/testpg",function(req,res) {
-    database.testPg(req,res);
+app.get("/testpg", function (req, res) {
+    database.testPg(req, res);
 });
 
+
+app.get("/book-cover/:isbn", function (req, res) {
+    var isbn = req.params.isbn;
+    var coverUrl = fileStore.getCoverUrlFromAmazon(isbn);
+    var userAgent = req.headers["user-agent"];
+    if (userAgent && userAgent.indexOf("Firefox") >= 0) {
+        res.writeHead(301, {
+            'Location': coverUrl
+        });
+        res.end();
+    } else {
+        fileStore.downloadImage(coverUrl, function (err, img) {
+            res.contentType = 'image/png';
+            res.contentLength = img.length;
+            res.end(img, 'binary');
+        });
+    }
+});
 
 app.get('/', function (req, res) {
     var isLogged = (req.user) ? true : false;
@@ -84,7 +101,6 @@ app.get('/library/:id', function (req, res) {
 });
 
 
-
 // GOODREADS constants
 var OAuth = require("oauth").OAuth;
 /* The key and the secret are here, just for debug, please get your own, form goodreads.com/api */
@@ -112,8 +128,8 @@ app.get("/updateBooks", function (req, res) {
         urlListOfBooks + req.user.id,
         req.user.token,
         req.user.tokenSecret,
-        function (error,data ) {
-          return books.getBooks(error, data, req.user.id, res);
+        function (error, data) {
+            return books.getBooks(error, data, req.user.id, res);
         }
     );
 

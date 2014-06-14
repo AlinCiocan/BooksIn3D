@@ -7,6 +7,7 @@
 // CONSTANTS
 var AMAZON_BUCKET_NAME = 'booksin3d';
 var AMAZON_BUCKET_URL = "http://s3-eu-west-1.amazonaws.com/" + AMAZON_BUCKET_NAME + "/";
+var AWS_PROXY_URL = "/book-cover/";
 var FILE_TYPE = ".png";
 
 
@@ -16,15 +17,27 @@ var s3 = new AWS.S3();
 
 
 exports.getCoverUrl = function (isbn) {
+    return AWS_PROXY_URL + isbn;
+};
+
+exports.getCoverUrlFromAmazon = function (isbn) {
     return AMAZON_BUCKET_URL + isbn + FILE_TYPE;
 };
 
 exports.storeBookCover = function (url, isbn, callback) {
-    downloadImage(url, function (img) {
-        putImageToAws(img, isbn, callback);
+    downloadImage(url, function (err, img) {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            putImageToAws(img, isbn, callback);
+        }
     });
 };
 
+exports.downloadImage = function (url, callback) {
+    downloadImage(url, callback);
+};
 
 function downloadImage(url, callback) {
     var requestParams = {
@@ -33,14 +46,9 @@ function downloadImage(url, callback) {
     };
 
     request(requestParams, function (err, response, body) {
-        if (err) {
-            console.log(err);
-        } else {
-            callback(body);
-        }
+        callback(err, body);
     });
 }
-
 
 function putImageToAws(data, filename, callback) {
     var params = {
